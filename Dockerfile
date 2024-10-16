@@ -16,7 +16,7 @@ RUN npm install
 ENV PUBLIC_MAPBOX_TOKEN=your_mapbox_token
 
 # Expose the port for the SvelteKit app
-EXPOSE 3000
+EXPOSE 5173
 
 # Run the SvelteKit dev server
 CMD ["npm", "run", "dev"]
