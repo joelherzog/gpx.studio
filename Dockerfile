@@ -19,4 +19,4 @@ ENV PUBLIC_MAPBOX_TOKEN=your_mapbox_token
 EXPOSE 3000
 
 # Run the SvelteKit dev server
-CMD ["npm", "run", "prod"]
+CMD ["npm", "run"]
