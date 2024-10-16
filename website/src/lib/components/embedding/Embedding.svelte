@@ -5,7 +5,6 @@
 	import GPXStatistics from '$lib/components/GPXStatistics.svelte';
 	import Map from '$lib/components/Map.svelte';
 	import LayerControl from '$lib/components/layer-control/LayerControl.svelte';
-	import OpenIn from '$lib/components/embedding/OpenIn.svelte';
 	import {
 		gpxStatistics,
 		slicedGPXStatistics,
@@ -229,7 +228,6 @@
 			geolocate={false}
 			hash={useHash}
 		/>
-		<OpenIn bind:files={options.files} bind:ids={options.ids} />
 		<LayerControl />
 		<GPXLayers />
 		{#if $fileObservers.size > 1}
