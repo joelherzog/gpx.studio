@@ -112,7 +112,7 @@ export class GPXLayer {
         this.map = map;
         this.fileId = fileId;
         this.file = file;
-        this.layerColor = getColor();
+        this.layerColor = '#D98716';
         this.unsubscribe.push(file.subscribe(this.updateBinded));
         this.unsubscribe.push(selection.subscribe($selection => {
             let newSelected = $selection.hasAnyChildren(new ListFileItem(this.fileId));
